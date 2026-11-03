@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=auto; minimum-scale=">
+        <title>Ford Escape</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <style>
+
+            body {
+                position: absolute;
+                width: 1920px;
+                height: 2160px;
+                left: 0px;
+                top: 0px;
+                padding: 0px;
+                margin: 0px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .hero {
+                position: absolute;
+                width: 1920px;
+                height: 1080px;
+                left: 0px;
+                top: 0px;
+                padding: 0px;
+                margin: 0px;
+                background: url('fordLandingPage/assets/hero_background.png');
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .menu {
+                position: relative;
+                width: 1920px;
+                height: 30px;
+                top: 70px;
+                background-color: transparent;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .menuButtonsLVehicles {
+                left: 260px;
+                width: 50px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .menuButtonsLShop {
+                left: 360px;
+                width: 40px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .menuButtonsLSupport {
+                left: 440px;
+                width: 90px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .menuButtonsLPro {
+                left: 590px;
+                width: 90px;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .menuButtonsRSearch {
+                left: 1630px;
+                width: 20px;
+                height: 20px;
+                background-image: url('assets/search-v2-white.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+            }
+            .menuButtonsRLocate {
+                left: 1670px;
+                width: 95px;
+                height: 20px;
+                background-image: url('assets/location-outline-v2-white.png');
+                background-repeat: no-repeat;
+                background-position: left;
+                text-align: right;
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+                font-size: 14px;
+            }
+            .menuButtonsRAccount {
+                left: 1780px;
+                width: 20px;
+                height: 20px;
+                background-image: url('assets/account-outline-v2-white.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+            }
+            .menuButtonsRGlobe {
+                left: 1820px;
+                width: 20px;
+                height: 20px;
+                background-image: url('assets/globe-v2-white.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+            }
+
+            .heroTitle {
+                position: absolute;
+                color: white;
+                left: 105px;
+                top: 720px;
+                width: 1815px;
+            }
+            .heroTitleYear {
+                position: absolute;
+                font-size: 34px;
+                padding: 0px;
+                left: 0px;
+                top: 0px;
+                font-weight: 100;
+            }
+            .heroTitleName {
+                position: absolute;
+                padding: 0px;
+                left: 0px;
+                top: 10px;
+                font-size: 74px;
+                font-weight: 100;
+            }
+            .heroTitlePrice {
+                position: absolute;
+                padding: 0px;
+                left: 0px;
+                top: 120px;
+                font-weight: 100;
+            }
+            .heroTitleDetails {
+                position: absolute;
+                padding: 0px;
+                left: 0px;
+                top: 190px;
+                text-decoration: underline;
+                font-weight: 100;
+            }
+
+            .heroInventory {
+                position: absolute;
+                left: 105px;
+                top: 980px;
+                padding: 0px;
+                margin: 0px;
+            }
+            .heroInventorySearch {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 160px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                background-color: white;
+                border-radius: 20px;
+                font-size: 20px;
+            }
+            .heroInventory2025 {
+                position: absolute;
+                left: 180px;
+                top: 0px;
+                width: 160px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 20px;
+                font-size: 20px;
+            }
+
+            .rightRide {
+                position: absolute;
+                width: 1920px;
+                height: 1080px;
+                left: 0px;
+                top: 1080px;
+                padding: 0px;
+                margin: 0px;
+                background: url('fordLandingPage/assets/rightRide.png');
+            }
+            
+            .imgHybrid{
+                position: absolute;
+                top: 1550px;
+                left: 80px;
+                width: 320px;
+                height: 185px;
+            }
+            .imgActive{
+                position: absolute;
+                top: 1550px;
+                left: 560px;
+                width: 320px;
+                height: 185px;
+            }
+            .imgSTLine{
+                position: absolute;
+                top: 1550px;
+                left: 1040px;
+                width: 320px;
+                height: 185px;
+            }
+            .imgPlatinum{
+                position: absolute;
+                top: 1550px;
+                left: 1520px;
+                width: 320px;
+                height: 185px;
+            }
+            .rides {
+                position: absolute;
+                left: 105px;
+                top: 1780px;
+            }
+            .rideBox {
+                position: absolute;
+                width: 320px;
+                height: 360px;
+                background-color: #efefef;
+                border-radius: 5px;
+            }
+            .rideBox>h1 {
+                position: absolute;
+                left: 20px;
+                top: 30px;
+                padding: 0px;
+                margin: 0px;
+                font-weight: 100;
+                font-size: 36px;
+            }
+            .rideBox>h2 {
+                position: absolute;
+                left: 20px;
+                top: 70px;
+                padding: 0px;
+                margin: 0px;
+                font-weight:100;
+            }
+            .rideBox>ul {
+                position: absolute;
+                left: 40px;
+                top: 130px;
+                padding: 0px;
+                margin: 0px;
+            }
+            .rideBox>ul li {
+                text-indent: -8px;
+                margin-bottom: 8px;
+                font-size: 20px;
+            }
+            .rideBox>ul li:last-child {
+                margin-bottom: 0px;
+            }
+            .rideButton {
+                position: absolute;
+                left: 20px;
+                top: 290px;
+                width: 160px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: #0276b3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            button {
+                text-wrap: nowrap;
+                text-transform: uppercase;
+                text-align: center;
+                align-items: center;
+                position: absolute;
+                background: none;
+                border: none;
+                top: 5px;
+                height: 20px;
+                font-size: 10px;
+                text-align: center;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <nav class="menu">
+                <ul>
+                    <li style="display: inline-block; margin: 0 10px;">
+                        <a href="#"><img src="assets\FordOval.png" alt="Ford Icon" style="width: 80px; height: 30px; left: 100px; position: absolute; top: 0px;"></img></a>
+                    </li>
+                    <div class="menuButtonsL">
+                        <button class="menuButtonsLVehicles"><a href="#">Vehicles</a></button>
+                        <button class="menuButtonsLShop"><a href="#">Shop</a></button>
+                        <button class="menuButtonsLSupport"><a href="#">Support & Service</a></button>
+                        <button class="menuButtonsLPro"><a href="#">Ford Pro Solutions</a></button>
+                    </div>
+                    <div class="menuButtonsR">
+                        <button class="menuButtonsRSearch"></button>
+                        <button class="menuButtonsRLocate"><a href="#"; style = "color :white">Locate Dealer</a></button>
+                        <button class="menuButtonsRAccount"></button>
+                        <button class="menuButtonsRGlobe"></button>
+                    </div>
+                </ul>
+            </nav>
+            <img src="assets\hero_background.png" alt="A picture of the Ford Escape 2026 model driving, captioned 'Manifest like you mean it'." style="position: absolute; z-index: -1; top: 0px; left: 0px; width: 1920px; height: 1080px;">
+            <div class="heroTitle">
+                <h2 class="heroTitleYear">2026</h2>
+                <h1 class="heroTitleName">Escape®</h1>
+                <h2 class="heroTitlePrice">Starting at $30,500<sup>1</sup></h2>
+                <a href="#" class="heroTitleDetails">Details</a>
+            </div>
+            <div class="heroInventory">
+                <a href="#" class="heroInventorySearch">Search Inventory</a>
+                <a href="#" class="heroInventory2025">2025 Escape</a>
+            </div>
+        </div>
+        <div class="rightRide">
+            <h1 style="text-transform: uppercase; font-size: 74px; font-weight: 100; position: absolute; left: 155px; top: 50px;">Find the Right Ride for Your Road</h1>
+            <h2 style="text-transform: uppercase; font-size: 38px; font-weight: 100; position: absolute; left: 155px; top: 150px;">4 Options to make your move.</h2>
+            <img src="assets\find-the-right-ride_bg.png" alt="A scenic image of a city skyline" style="position: relative; z-index: -1; top: 290px; left: 0px; width: 1920px; height: 320px;">
+        </div>
+        <div class="imgHybrid">
+            <img src="assets\Escape® Plug-in Hybrid.png" alt="A picture of the 2026 Ford Escape Plug-in Hybrid">
+        </div>
+        <div class="imgActive">
+            <img src="assets\Escape Active®.png" alt="A picture of the 2026 Ford Escape Active®">
+        </div>
+        <div class="imgSTLine">
+            <img src="assets\Escape® ST-Line.png" alt="A picture of the 2026 Ford Escape ST-Line">
+        </div>
+        <div class="imgPlatinum">
+            <img src="assets\Escape® Platinum™.png" alt="A picture of the 2026 Ford Escape Platinum™">
+        </div>
+        <div class="rides">
+            <div class="rideBox" style="left: 0px;">
+                <h1>Escape® Plug-In Hybrid</h1>
+                <h2>Starting at $35,400<sup>1</sup></h2>
+                <ul>
+                    <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                    <li>Standard Front-Wheel Drive</li>
+                    <li>13.2" Center Display</li>
+                    <li>101 EPA-EST. MPGE (Combined)</li>
+                </ul>
+                <a href="#" class="rideButton">Build & Price</a>
+            </div>
+            <div class="rideBox" style="left: 480px;">
+                <h1>Escape Active®</h1>
+                <h2>Starting at $30,350<sup>1</sup></h2>
+                <ul>
+                    <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                    <li>Standard Front-Wheel Drive</li>
+                    <li>13.2" Center Display</li>
+                    <li>101 EPA-EST. MPGE (Combined)</li>
+                </ul>
+                <a href="#" class="rideButton">Build & Price</a>
+            </div>
+            <div class="rideBox" style="left: 960px;">
+                <h1>Escape® ST-Line</h1>
+                <h2>Starting at $31,195<sup>1</sup></h2>
+                <ul>
+                    <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                    <li>Standard Front-Wheel Drive</li>
+                    <li>13.2" Center Display</li>
+                    <li>101 EPA-EST. MPGE (Combined)</li>
+                </ul>
+                <a href="#" class="rideButton">Build & Price</a>
+            </div>
+            <div class="rideBox" style="left: 1440px;">
+                <h1>Escape® Platinum™</h1>
+                <h2>Starting at $37,940<sup>1</sup></h2>
+                <ul>
+                    <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                    <li>Standard Front-Wheel Drive</li>
+                    <li>13.2" Center Display</li>
+                    <li>101 EPA-EST. MPGE (Combined)</li>
+                </ul>
+                <a href="#" class="rideButton">Build & Price</a>
+            </div>
+        </div>
+    </body>
+</html>
